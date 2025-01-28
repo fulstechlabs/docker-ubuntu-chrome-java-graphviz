@@ -4,7 +4,7 @@ ARG DEBIAN_FRONTEND=noninteractive
 
 RUN apt update \
   && apt install -y curl wget \
-  && curl -fsSL https://deb.nodesource.com/setup_22.x -o nodesource_setup.sh \
+  && curl -fsSL https://deb.nodesource.com/setup_20.x -o nodesource_setup.sh \
   && bash nodesource_setup.sh \
   && apt install -y nodejs \
   && apt install -y build-essential \
