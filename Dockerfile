@@ -16,3 +16,5 @@ RUN apt update \
   && apt install -y ./google-chrome-stable_current_amd64.deb \
   && rm -rf google-chrome-stable_current_amd64.deb \
   && rm -rf /var/lib/apt/lists/*
+
+ENV GRAPHVIZ_DOT=/usr/bin/dot
